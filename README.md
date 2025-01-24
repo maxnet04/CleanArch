@@ -1,4 +1,4 @@
-# Arquitetura limpa GO
+# Arquitetura limpa em GO REST-GRPC-GRAPHQL
 
 Registrar pedidos, calcular o preço total e retornar uma lista de pedidos. Foi prejetado utiliaznao Clean Arquitecture implementando modelos de comunicação REST , GRPC e GraphQl alem de criar os eventos de  mensagens de criação de pedidos no RabbitMQ 
 
@@ -92,7 +92,7 @@ Servicos disponiveis para serem chamados:
 ![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/grpc.PNG)
 
 
-### visualzando as mensagens com HabbitMQ
+### visualzando as mensagens com RabbitMQ
 
 Acesse o RabbitMQ em: http://localhost:15672/
 
