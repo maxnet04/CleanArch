@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/infra/grpc/pb"
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/usecase"
+	"github.com/maxnet04/CleanArch/internal/infra/grpc/pb"
+	"github.com/maxnet04/CleanArch/internal/usecase"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 

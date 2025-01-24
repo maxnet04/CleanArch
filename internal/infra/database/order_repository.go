@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/entity"
+	"github.com/maxnet04/CleanArch/internal/entity"
 )
 
 type OrderRepository struct {

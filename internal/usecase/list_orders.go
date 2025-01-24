@@ -3,7 +3,7 @@ package usecase
 import (
 	"fmt"
 
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/entity"
+	"github.com/maxnet04/CleanArch/internal/entity"
 )
 
 type ListOrderOutputDTO struct {

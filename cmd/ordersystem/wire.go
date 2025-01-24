@@ -7,12 +7,12 @@ import (
 	"database/sql"
 
 	"github.com/google/wire"
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/entity"
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/event"
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/infra/database"
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/infra/web"
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/internal/usecase"
-	"github.com/isaacmirandacampos/go-expert/03-clean-arch/pkg/events"
+	"github.com/maxnet04/CleanArch/internal/entity"
+	"github.com/maxnet04/CleanArch/internal/event"
+	"github.com/maxnet04/CleanArch/internal/infra/database"
+	"github.com/maxnet04/CleanArch/internal/infra/web"
+	"github.com/maxnet04/CleanArch/internal/usecase"
+	"github.com/maxnet04/CleanArch/pkg/events"
 )
 
 var setOrderRepositoryDependency = wire.NewSet(
