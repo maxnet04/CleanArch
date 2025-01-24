@@ -1,8 +1,8 @@
-# Arquitetura limpa em GO REST-GRPC-GRAPHQL
+# Arquitetura limpa em GO
 
-Registrar pedidos, calcular o preço total e retornar uma lista de pedidos. Foi prejetado utiliaznao Clean Arquitecture implementando modelos de comunicação REST , GRPC e GraphQl alem de criar os eventos de  mensagens de criação de pedidos no RabbitMQ 
+Registrar pedidos, calcular o preço total e retornar uma lista de pedidos. Foi prejetado utiliaznao Clean Arquitecture implementando modelos de comunicação REST , GRPC e GraphQl alem de gerar os eventos de  mensagens de criação de pedidos no RabbitMQ 
 
-Abaixo os endpoints disponivels
+- Abaixo os endpoints disponivels
 
 Endpoint REST (POST / order e GET /orders)
 Service CreateOrder e ListOrders com 
