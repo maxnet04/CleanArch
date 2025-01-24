@@ -4,9 +4,11 @@ Registrar pedidos, calcular o preço total e retornar uma lista de pedidos. Foi 
 
 - Abaixo os endpoints disponivels
 
-Endpoint REST (POST / order e GET /orders)
-Service CreateOrder e ListOrders com 
-Query CreateOrder e ListOrders GraphQL
+    Endpoint REST (POST / order e GET /orders)
+
+    Service CreateOrder e ListOrders com 
+
+    Query CreateOrder e ListOrders GraphQL
 
 
 ### Prerequisites
