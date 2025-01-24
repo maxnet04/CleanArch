@@ -31,11 +31,11 @@ GET list_orders http://localhost:8000/orders
 
 - CreateOrder
 
-![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/rest-1.png)
+![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/rest-1.PNG)
 
 - ListOrders
 
-![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/rest-2.png)
+![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/rest-2.PNG)
 
 
 ### Executando a aplicação com GraphQL
@@ -55,7 +55,7 @@ mutation CreateOrder {
 }
 ```
 
-![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/graphi-1.png)
+![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/graphi-1.PNG)
 
 - ListOrders
 
@@ -84,16 +84,16 @@ Execute apontando para o arquivo .proto
 evans --proto internal/infra/grpc/protofiles/order.proto
 ```
 
-![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/grpc2.png)
+![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/grpc2.PNG)
 
 
 Servicos disponiveis para serem chamados:
 
-![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/grpc1.png)
+![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/grpc1.PNG)
 
 
 ### visualzando as mensagens com HabbitMQ
 
 Acesse o RabbitMQ em: http://localhost:15672/
 
-![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/rabbit.png)
+![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/rabbit.PNG)
