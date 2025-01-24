@@ -5,10 +5,9 @@ Registrar pedidos, calcular o preço total e retornar uma lista de pedidos. Foi 
 Abaixo os endpoints disponivels
 
 Endpoint REST (POST / order e GET /orders)
-Service CreateOrder e ListOrders com GRPC
+Service CreateOrder e ListOrders com 
 Query CreateOrder e ListOrders GraphQL
 
-## Running
 
 ### Prerequisites
 
@@ -31,11 +30,11 @@ GET list_orders http://localhost:8000/orders
 
 - CreateOrder
 
-![alt text](/images/rest-1.png)
+![alt text](/docs/rest-1.png)
 
 - ListOrders
 
-![alt text](/images/rest-2.png)
+![alt text](/docs/rest-2.png)
 
 
 ### Executando a aplicação com GraphQL
@@ -53,7 +52,7 @@ Abra o browser e va para: http://localhost:8080/
   }
 }`
 
-![alt text](/images/graphi-1.png)
+![alt text](/docs/graphi-1.png)
 
 - ListOrders
 
@@ -66,28 +65,30 @@ Abra o browser e va para: http://localhost:8080/
   }
 }`
 
-![alt text](/images/graphi-2.png)
+![alt text](/docs/graphi-2.png)
 
 ### Executando a aplicação com gRPC
 
 Instale o evans cli para testar grpc:
-
+```bash
 go install github.com/ktr0731/evans@latest
+```
 
 Execute apontando para o arquivo .proto
-
+```bash
 evans --proto internal/infra/grpc/protofiles/order.proto
+```
 
-![alt text](/images/grpc2.png)
+![alt text](/docs/grpc2.png)
 
 
 Servicos disponiveis para serem chamados:
 
-![alt text](/images/grpc1.png)
+![alt text](/docs/grpc1.png)
 
 
 ### visualzando as mensagens com HabbitMQ
 
 Acesse o RabbitMQ em: http://localhost:15672/
 
-![alt text](/images/rabbit.png)
+![alt text](/docs/rabbit.png)
