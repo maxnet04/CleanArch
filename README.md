@@ -89,7 +89,7 @@ evans --proto internal/infra/grpc/protofiles/order.proto
 
 Servicos disponiveis para serem chamados:
 
-![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/grpc1.PNG)
+![alt text](https://github.com/maxnet04/CleanArch/blob/main/images/grpc.PNG)
 
 
 ### visualzando as mensagens com HabbitMQ
