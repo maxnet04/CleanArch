@@ -26,6 +26,7 @@ Use o plugin do vscode api rest para fazer chamada utilizando os arquivos dispon
 Endpoints disponíveis:
 
 POST create_order http://localhost:8000/order
+
 GET list_orders http://localhost:8000/orders
 
 - CreateOrder
@@ -43,29 +44,33 @@ Abra o browser e va para: http://localhost:8080/
 
 - CreateOrder
 
-`mutation createOrder {
-  createOrder(input: {Id: "tr6544y", Price:185.77, Tax:15.33}) {
-    Id
+```graphql
+mutation CreateOrder {
+  createOrder(input:{ id: "bb", Price: 10.20, Tax: 10}) {
+    id
     Price
     Tax
     FinalPrice
   }
-}`
+}
+```
 
 ![alt text](/docs/graphi-1.png)
 
 - ListOrders
 
-`query listOrders {
-  listOrders{
-    Id
+```graphql
+query ListOrder {
+  listOrders {
+    id
     Price
     Tax
     FinalPrice
   }
-}`
+}
+```
 
-![alt text](/docs/graphi-2.png)
+![alt text](https://github.com/maxnet04/CleanArch/blob/main/docs/graphi-2.PNG)
 
 ### Executando a aplicação com gRPC
 
