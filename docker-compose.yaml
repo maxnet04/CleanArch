@@ -1,0 +1,54 @@
+services:
+  application:
+    build: "."
+    container_name: "application"
+    restart: always
+    ports:
+      - 8000:8000
+      - 8080:8080
+      - 50051:50051
+    depends_on:
+      - mysql
+      - rabbitmq
+  mysql:
+    image: mysql:9.1.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: orders
+      MYSQL_PASSWORD: root
+    ports:
+      - 3306:3306
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+          cpus: '1.0'
+        reservations:
+          memory: 1024M
+          cpus: '1'
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+  migrate:
+    image: migrate/migrate
+    container_name: migrate
+    depends_on:
+      - mysql
+    entrypoint: >
+      sh -c "
+      while ! nc -z mysql 3306; do sleep 1; done;
+      migrate -path=/migrations -database 'mysql://root:root@tcp(mysql:3306)/orders' up
+      "
+    environment:
+      DATABASE_URL: "mysql://root:root@tcp(mysql:3306)/orders"
+    volumes:
+      - ./migrations:/migrations
